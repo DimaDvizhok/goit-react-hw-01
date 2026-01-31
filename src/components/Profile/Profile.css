@@ -1,0 +1,17 @@
+.card-item {
+  border-radius: 5px;
+  border: 1px solid #292828;
+  background-color: rgb(44, 67, 46);
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  box-shadow: 1px 2px 8px;
+  margin-bottom: 10px;
+}
+
+.card-item.on-status {
+  background-color: rgb(7, 238, 19);
+}
+
+.card-item.off-status {
+  background-color: rgb(230, 110, 63);
+}

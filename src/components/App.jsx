@@ -1,5 +1,5 @@
 import "./App.css";
-import Profile from "./Profile";
+import Profile from "./Profile/Profile";
 import Section from "./Section/Section";
 
 const users = [

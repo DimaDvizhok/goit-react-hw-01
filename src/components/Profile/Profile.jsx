@@ -1,6 +1,14 @@
+import clsx from "clsx";
+import "./Profile.css";
+
 const Profile = ({ name, phone, email, status, avatar, userId }) => {
   return (
-    <div className="card-item">
+    <div
+      className={clsx("card-item", {
+        "on-status": status === "online",
+        "off-status": status === "offline",
+      })}
+    >
       <h2>Name: {name}</h2>
       <img src={avatar} alt={name} />
       <p>Phone: {phone}</p>
