@@ -1,5 +1,6 @@
 import "./App.css";
 import Profile from "./Profile";
+import Section from "./Section/Section";
 
 const users = [
   {
@@ -8,7 +9,7 @@ const users = [
     phone: "+380 67 123 45 67",
     email: "oleksandr.kov@example.com",
     status: "online",
-    avatar: "https://i.pravatar.cc/150?u=fb1",
+    avatar: "https://randomuser.me/api/portraits/men/1.jpg",
   },
   {
     id: "user-fb2",
@@ -16,7 +17,7 @@ const users = [
     phone: "+380 50 987 65 43",
     email: "mariya.p@testmail.com",
     status: "offline",
-    avatar: "https://i.pravatar.cc/150?u=fb2",
+    avatar: "https://randomuser.me/api/portraits/women/2.jpg",
   },
   {
     id: "user-fb3",
@@ -24,7 +25,7 @@ const users = [
     phone: "+380 93 456 78 90",
     email: "dima_sav@gmail.com",
     status: "online",
-    avatar: "https://i.pravatar.cc/150?u=fb3",
+    avatar: "https://randomuser.me/api/portraits/men/3.jpg",
   },
   {
     id: "user-fb4",
@@ -32,7 +33,7 @@ const users = [
     phone: "+380 66 321 09 87",
     email: "elena.tk@ukr.net",
     status: "offline",
-    avatar: "https://i.pravatar.cc/150?u=fb4",
+    avatar: "https://randomuser.me/api/portraits/women/4.jpg",
   },
   {
     id: "user-fb5",
@@ -40,7 +41,7 @@ const users = [
     phone: "+380 97 111 22 33",
     email: "igor_fish@outlook.com",
     status: "online",
-    avatar: "https://i.pravatar.cc/150?u=fb5",
+    avatar: "https://randomuser.me/api/portraits/men/5.jpg",
   },
   {
     id: "user-fb6",
@@ -48,7 +49,7 @@ const users = [
     phone: "+380 63 555 44 22",
     email: "ann.melnik@example.com",
     status: "offline",
-    avatar: "https://i.pravatar.cc/150?u=fb6",
+    avatar: "https://randomuser.me/api/portraits/women/6.jpg",
   },
   {
     id: "user-fb7",
@@ -56,7 +57,7 @@ const users = [
     phone: "+380 95 777 88 99",
     email: "sheva7@test.com",
     status: "online",
-    avatar: "https://i.pravatar.cc/150?u=fb7",
+    avatar: "https://randomuser.me/api/portraits/men/7.jpg",
   },
   {
     id: "user-fb8",
@@ -64,7 +65,7 @@ const users = [
     phone: "+380 68 444 00 11",
     email: "viki.boiko@ukr.net",
     status: "offline",
-    avatar: "https://i.pravatar.cc/150?u=fb8",
+    avatar: "https://randomuser.me/api/portraits/women/8.jpg",
   },
   {
     id: "user-fb9",
@@ -72,7 +73,7 @@ const users = [
     phone: "+380 50 222 33 44",
     email: "max_fox@gmail.com",
     status: "online",
-    avatar: "https://i.pravatar.cc/150?u=fb9",
+    avatar: "https://randomuser.me/api/portraits/men/9.jpg",
   },
   {
     id: "user-fb10",
@@ -80,27 +81,29 @@ const users = [
     phone: "+380 73 888 99 00",
     email: "july.krav@example.com",
     status: "offline",
-    avatar: "https://i.pravatar.cc/150?u=fb10",
+    avatar: "https://randomuser.me/api/portraits/women/10.jpg",
   },
 ];
 
 const App = () => {
   return (
     <div>
-      {users.map((profile) => {
-        return (
-          <Profile
-            key={profile.id}
-            userId={profile.id}
-            name={profile.name}
-            phone={profile.phone}
-            email={profile.email}
-            v
-            status={profile.status}
-            avatar={profile.avatar}
-          />
-        );
-      })}
+      <Section title="Profile list">
+        {users.map((profile) => {
+          return (
+            <Profile
+              key={profile.id}
+              userId={profile.id}
+              name={profile.name}
+              phone={profile.phone}
+              email={profile.email}
+              v
+              status={profile.status}
+              avatar={profile.avatar}
+            />
+          );
+        })}
+      </Section>
     </div>
   );
 };
