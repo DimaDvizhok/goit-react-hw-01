@@ -6,9 +6,10 @@
   padding-top: 10px;
   box-shadow: 4px 4px 8px;
   max-width: 479px;
+  margin: 0 auto;
 }
 
-img {
+.img {
   width: 50%;
   border-radius: 100%;
   background-color: #000000;
