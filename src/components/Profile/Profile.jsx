@@ -9,7 +9,6 @@ const Profile = ({ name, tag, location, image, stats: { followers, views, likes 
         <p className={css.tagItem}>@{tag}</p>
         <p className={css.locItem}>{location}</p>
       </div>
-
       <ul className={css.statsList}>
         <li className={css.statsItem}>
           <span>Followers</span>

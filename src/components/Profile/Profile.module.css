@@ -1,11 +1,11 @@
 .userCard {
   border-radius: 10px;
-  border: 5px solid #000000;
-  background-color: rgb(236, 241, 236);
+  border: 3px solid #000000;
+  background-color: rgb(238, 239, 238);
   color: rgb(0, 0, 0);
   padding-top: 10px;
   box-shadow: 4px 4px 8px;
-  max-width: 480px;
+  max-width: 479px;
 }
 
 img {
@@ -46,8 +46,8 @@ img {
   flex-direction: column;
   padding: 20px 10px;
   width: 160px;
-  border: 1px solid #555555;
-  background-color: #b4b3b3;
+  border: 2px solid #787878;
+  background-color: #c7c6c6;
 }
 .statsSpan {
   font-weight: 700;
